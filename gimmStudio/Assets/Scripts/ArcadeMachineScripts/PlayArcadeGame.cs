@@ -7,11 +7,15 @@ using Photon.Realtime;
 using UnityEngine.SceneManagement;
 public class PlayArcadeGame : MonoBehaviourPunCallbacks
 {
-    
+   
     public PhotonView PV;
     public GameObject playPanel;
     public Text gameText;
     public bool isPlaying;
+    private bool isLoaded;
+    private GameObject player;
+    public GameObject testCam;
+   
     public void Awake()
     {
         PV = this.photonView;
@@ -28,6 +32,7 @@ public class PlayArcadeGame : MonoBehaviourPunCallbacks
         {
             if (other.tag == "Player")
             {
+                player = other.gameObject;
                 playPanel.SetActive(true);
                 isPlaying = true;
                 
@@ -49,13 +54,44 @@ public class PlayArcadeGame : MonoBehaviourPunCallbacks
     }
     public void Update()
     {
-        if (isPlaying)
+        if (PV.IsMine)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (isPlaying)
             {
-                PhotonNetwork.LoadLevel("Test");
+                if (!isLoaded)
+                {
+                    if (Input.GetKeyDown(KeyCode.F))
+                    {
+                        player.GetComponent<FirstPersonAIO>().enabled = false;
+                        player.GetComponentInChildren<Camera>().enabled = false;
+                        Debug.Log("Loaded new Scene");
+                        SceneManager.LoadSceneAsync("Test", LoadSceneMode.Additive);
+                        isLoaded = true;
+                        playPanel.SetActive(false);
+                        testCam.SetActive(true);
+
+
+                    }
+                   
+                }
+                else
+                {
+                    if (Input.GetKeyDown(KeyCode.Escape))
+                    {
+                        player.GetComponent<FirstPersonAIO>().enabled = true;
+                        player.GetComponentInChildren<Camera>().enabled = true;
+                        SceneManager.UnloadSceneAsync("Test");
+                        isLoaded = false;
+                        playPanel.SetActive(true);
+                        testCam.SetActive(false);
+                    }
+                }
+                
+
             }
         }
+      
        
     }
+    
 }

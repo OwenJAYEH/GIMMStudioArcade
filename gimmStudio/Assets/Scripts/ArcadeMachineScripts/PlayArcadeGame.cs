@@ -62,7 +62,6 @@ public class PlayArcadeGame : MonoBehaviourPunCallbacks
                 {
                     if (Input.GetKeyDown(KeyCode.F))
                     {
-                        player.GetComponent<FirstPersonAIO>().enabled = false;
                         player.GetComponentInChildren<Camera>().enabled = false;
                         Debug.Log("Loaded new Scene");
                         SceneManager.LoadSceneAsync("Test", LoadSceneMode.Additive);
@@ -78,7 +77,6 @@ public class PlayArcadeGame : MonoBehaviourPunCallbacks
                 {
                     if (Input.GetKeyDown(KeyCode.Escape))
                     {
-                        player.GetComponent<FirstPersonAIO>().enabled = true;
                         player.GetComponentInChildren<Camera>().enabled = true;
                         SceneManager.UnloadSceneAsync("Test");
                         isLoaded = false;

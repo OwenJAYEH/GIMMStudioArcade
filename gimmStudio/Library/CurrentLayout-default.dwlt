@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Scene
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 112
+  controlID: 39
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 38
+  controlID: 40
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 39
+  controlID: 41
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\rkdsw\Documents\GIMMStudioArcade\gimmStudio
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 52480000
-    m_LastClickedID: 18514
-    m_ExpandedIDs: 0000000040480000424800004448000000ca9a3b
+    m_SelectedIDs: 8a480000
+    m_LastClickedID: 18570
+    m_ExpandedIDs: 000000008a4800008c4800008e480000964800009e480000a2480000aa480000d24a0000705000007250000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000404800004248000044480000
+    m_ExpandedIDs: 000000008a4800008c4800008e480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -483,21 +483,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: bab1ffff78c1ffff82c1ffff04c3ffffb2c4ffffc4c4ffffdcc6ffffdec6ffffeceeffff46fbfffff4ffffffec46000042470000a0470000be760000107a0000
+      m_ExpandedIDs: 44fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Canvas
-        m_OriginalName: Canvas
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -16008
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 2.376986, y: 1.6813233, z: -15.407165}
     speed: 2
-    m_Value: {x: 0.17150113, y: 1.107972, z: -0.01478225}
+    m_Value: {x: 2.376986, y: 1.6813233, z: -15.407165}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -594,11 +594,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.015706517, y: -0.9805894, z: 0.17569979, w: 0.086641416}
     speed: 2
-    m_Value: {x: -0.00014567761, y: -0.9916505, z: 0.12894939, w: -0.0012011289}
+    m_Value: {x: 0.015705109, y: -0.9805015, z: 0.17568403, w: 0.08663365}
   m_Size:
     m_Target: 0.7695491
     speed: 2
-    m_Value: 1.5635002
+    m_Value: 0.7695491
   m_Ortho:
     m_Target: 0
     speed: 2
